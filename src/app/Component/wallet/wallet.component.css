@@ -1,0 +1,64 @@
+span.validthru {position: absolute;top: 6px;left: 67px;font-size: 24px;}
+         div#example1_length , div#example1_filter {display: none;}
+         table#example, table#example1 {padding: 15px;}
+         .kyc_title p {
+         padding: 5px 30px 15px;
+         color: #13289F;
+         font-weight: bold;
+         font-size: 18px;
+         margin-bottom: 0;
+         }
+         .kyc-border {
+         border: 1px solid #f1f4f8;
+         margin: 50px 0 0;
+         }
+         .wallet_member{padding:20px;margin-bottom: 20px; border-bottom: 1px solid #eee;}
+         ul.wallet-btn li:last-child a{color: #fff;margin: 0px;background: transparent;
+         border-radius: 7px; font-size: 14px;padding: 12px;}
+         ul.wallet-btn li:nth-child(1) a    {color: #445DF7;border: 1px solid #445DF7;border-radius: 12px;
+         padding: 7px 15px;display: inline-block;}
+         ul.wallet-btn li:nth-child(2) a    {color: #445DF7;border: 1px solid #445DF7;border-radius: 12px;
+         padding: 7px 15px;display: inline-block;}
+         ul.wallet-btn li {padding: 0 3px;display: inline-block;margin-bottom: 15px;}
+         form.recieve-form{padding: 10px 20px;}
+         .recieve_code img{width:45%}
+         .recieve_code p.copy{width: 23%;margin: auto;background:#e4e3e3; margin-bottom: 20px;    
+         border-radius: 5px;padding: 5px;border: 1px solid #c3c1c1;font-weight:600}
+         form.dapp-balance{padding: 10px 20px;}
+         .walletcard .walletcard3 input { background: none; border: 0; font-size: 28px;color: #fff;    font-weight: 700;}
+         .walletcard { background: linear-gradient(to top, #005387, #0D98C9);border-radius: 10px;padding:25px 20px;color: #fff; margin-bottom: 15px;}
+         .walletcard3 input, .walletcard4 h5, .walletcard5 h5{margin-bottom: 0;font-size: 24px;}
+         .walletcard3 p { position: relative;top: -7px;color: #A2C0D1;}
+         .walletcard4 p, .walletcard5 p {color: #A2C0D1;}
+         .walletcard1, .walletcard2 {padding-bottom: 10px;}
+         .premiumlogo img {margin: 15px -12px 25px;}
+         @media (max-width: 767px){
+            .rightside {background: #f9f9f9;position: relative;top: 260px;border-radius: 20px;}
+         }
+         /* .rightside{
+            border: solid blue 4px;
+         } */
+         .bottomdiv {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  position: fixed; 
+    bottom:10%;
+   left: 40%;
+    width:100%; 
+};
+
+ul.wallet-btn li:nth-child(2) a {
+    color: #445DF7;
+    border: 1px solid #445DF7;
+    border-radius: 12px;
+    padding: 7px 15px;
+    display: inline-block;
+}
+ul.wallet-btn li:nth-child(3) a {
+    color: #445DF7;
+    border: 1px solid #445DF7;
+    border-radius: 12px;
+    padding: 7px 15px;
+    display: inline-block;
+}

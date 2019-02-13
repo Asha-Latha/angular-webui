@@ -1,0 +1,26 @@
+div#example1_length , div#example1_filter {display: none;}
+            table#example, table#example1 {padding: 15px;}
+            .tableshow{
+                display: none;
+            }
+
+            div#example1_length , div#example1_filter {display: none;}
+            table#example, table#example1 {padding: 15px;}
+            form.add-user {padding: 10px 20px;}
+            .btn-danger{
+               color: blue;
+               border: 1px solid rgb(235, 47, 47);
+               border-radius: 12px;
+               padding: 7px 15px;
+               display: inline-block;
+               background: transparent;
+           }
+           .btn-sendmoney{
+               color: blue;
+               border: 1px solid blue;
+               border-radius: 12px;
+               padding: 7px 15px;
+               background: transparent;
+           }
+
+			       

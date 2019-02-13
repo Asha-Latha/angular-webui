@@ -18,9 +18,9 @@ export class UserService {
 
     
 	constructor(private http: Http) {
-    this.url = Constants.HOME_URL + 'userlogin/';
+    this.url = Constants.HOME_URL + 'user/login/';
     this.existUrl = Constants.HOME_URL + 'user/exist';
-    this.regUrl=Constants.HOME_URL + 'usersignup/';
+    this.regUrl=Constants.HOME_URL + 'user/signup/';
     
     // this.existUrl = Constants.HOME_URL + 'userlogin';
 }
@@ -72,6 +72,11 @@ export class UserService {
 
     }
 
+
+checklog()
+{
+    
+}
     
     // empRegisterr(data){
 		

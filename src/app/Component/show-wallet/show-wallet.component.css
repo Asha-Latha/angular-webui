@@ -1,0 +1,6 @@
+.btn-input{background-color:#415bf6; border-color:#415bf6}
+		    .btn-input:hover, btn-input:active{background-color:#415bf6 !important; border-color:#415bf6 !important;box-shadow:0 0 0 0.2rem rgba(65, 91, 246, 0.28)!important;}
+			.modal-backdrop{display:none}
+			form.recieve-form{padding: 10px 20px;}
+			body{background-color:#FEFFFF;}
+			 label.error{position: absolute;bottom: -25px;}

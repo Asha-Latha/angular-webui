@@ -1,0 +1,80 @@
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Smart Commerce">
+	<meta name="keywords" content="Smart Commerce">
+	<meta name="author" content="Smart Commerce">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BelBooks - Dashboard</title>
+	<link rel="shortcut icon" href="../../../assets/imges/logo.svg">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/assetss/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+	<!--onload wallet Modal -->
+	<div id="register_pop">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="topsec">
+						<img src="../../../assets/images/belbooks-logo.svg">
+					</div>
+				</div>
+				<div class="modal-body">
+					<h3 class="p1">Hi,Belfrics</h3>
+					<p class="p2">Welcome to Belrium Certificate Registry</p>
+					<p class="p3">Congratulations! Enter yor passphrase to see your wallet on the Belrium Network</p>
+					<form class="recieve-form" method="post" action="../Wallet/wallet.html" id="wallet">
+						<div class="form-group row">
+
+							<div class="col-12">
+								<div class="input-group">
+									<input id="passphrase" name="passphrase" placeholder="Enter Your Passphrase" type="password" required="required"
+									 class="form-control here">
+									<div class="input-group-append">
+										 <span class="input-group-text"><i onClick="hideshow()" class="fa fa-eye" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-12">
+								<input type="submit" class="btn btn-info btn-lg btn-input" value="Show Wallet">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--onload wallet Modal end -->
+	<script type="text/javascript" src="../../assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery.validate.js"></script>
+	<!-- <script>
+		$(document).ready(function () {
+			$('#wallet').validate();
+		});
+	</script> -->
+
+	<!-- <script type="text/javascript"> -->
+
+
+	<!-- // 	function hideshow() {
+
+	// 		var phrase = document.getElementById('passphrase');
+
+	// 		if (phrase.type === "password") {
+	// 			phrase.type = "text";
+	// 		}
+	// 		else { phrase.type = "password" }
+
+
+	// 	}
+	// </script> -->

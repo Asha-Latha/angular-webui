@@ -1,0 +1,14 @@
+div#example1_length , div#example1_filter {display: none;}
+            table#example, table#example1 {padding: 15px;}
+
+            div#example1_length , div#example1_filter {display: none;}
+            table#example, table#example1 {padding: 15px;}
+            form.add-user {padding: 10px 20px;}
+            .btn-danger{
+               color: red;
+               border: 1px solid red;
+               border-radius: 12px;
+               padding: 7px 15px;
+               display: inline-block;
+               background: transparent;
+           }

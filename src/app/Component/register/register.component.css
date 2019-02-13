@@ -1,0 +1,119 @@
+body {
+    overflow-y: auto
+ }
+
+ .login_page_left {
+    background: #ffffff;
+    margin: 30px 0px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #ffffff;
+ }
+
+ .reg-btn {
+    width: 125px;
+    color: #fff !important
+ } 
+
+ @media only screen and (max-width: 600px) {
+    .g-recaptcha {
+       transform: scale(0.55);
+       transform-origin: left;
+    }
+ }
+
+ @media only screen and (max-width: 1600px) {
+    .g-recaptcha {
+       transform: scale(1.05);
+       transform-origin: left;
+    }
+ }
+
+ @media only screen and (max-width: 1500px) {
+    .g-recaptcha {
+       transform: scale(0.92);
+       transform-origin: left;
+    }
+ }
+
+ @media only screen and (max-width: 1366px) {
+    .g-recaptcha {
+       transform: scale(0.76);
+       transform-origin: left;
+    }
+ }
+
+ @media only screen and (max-width: 1024px) {
+    .g-recaptcha {
+       transform: scale(0.57);
+       transform-origin: left;
+    }
+ }
+
+ .login_footer span {
+    color: #B6B6B6;
+    font-size: 13px
+ }
+
+ .login_footer span a {
+    color: #495774
+ }
+
+ .input-group.input_border input {
+    border-right: 0;
+ }
+
+ .input_border span.input-group-text {
+    background-color: transparent;
+ }
+
+ select#country {
+    font-size: 12px
+ }
+
+ select#user-type {
+    font-size: 12px
+ }
+
+ label.error {
+    position: absolute;
+    bottom: -25px;
+ }
+
+ .input_border input span {
+    color: #FFDB0303
+ }
+
+ .asterisk_input:after {
+    content: " *";
+    color: #e32;
+    position: absolute;
+    margin: 0px 0px 0px -20px;
+    font-size: 17px;
+    padding: 0 5px 0 0;
+    font-weight: 700;
+ }
+
+ .register_down {
+    padding: 17px 30px
+ }
+
+ .login_title,
+ .login_footer {
+    padding: 15px 15px
+ }
+
+ .login_title p {
+    color: #B2B2B2
+ }
+
+ .login_title h3 {
+    font-size: 22px;
+    color: #495774
+ }
+
+ @media (min-width: 1024px) {
+    .login_page_left {
+       padding: 30px 60px;
+    }
+ }

@@ -1,0 +1,267 @@
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Smart Commerce">
+   <meta name="keywords" content="Smart Commerce">
+   <meta name="author" content="Smart Commerce">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BelBooks - Login</title>
+   <link rel="shortcut icon" href="../../../assets/images/logo.svg">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap-grid.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="../../../assets/css/custom.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="../../shared/constant.js"></script>
+   <script src="../Register/register.js"></script>
+   <script src="../../shared/validation1.js"></script> 
+   <!-- <style type="text/css">
+      body {
+         overflow-y: auto
+      }
+
+      .login_page_left {
+         background: #ffffff;
+         margin: 30px 0px;
+         padding: 40px 30px;
+         border-radius: 10px;
+         box-shadow: 1px 1px 7px #ffffff;
+      }
+
+      .reg-btn {
+         width: 125px;
+         color: #fff !important
+      }
+
+      @media only screen and (max-width: 600px) {
+         .g-recaptcha {
+            transform: scale(0.55);
+            transform-origin: left;
+         }
+      }
+
+      @media only screen and (max-width: 1600px) {
+         .g-recaptcha {
+            transform: scale(1.05);
+            transform-origin: left;
+         }
+      }
+
+      @media only screen and (max-width: 1500px) {
+         .g-recaptcha {
+            transform: scale(0.92);
+            transform-origin: left;
+         }
+      }
+
+      @media only screen and (max-width: 1366px) {
+         .g-recaptcha {
+            transform: scale(0.76);
+            transform-origin: left;
+         }
+      }
+
+      @media only screen and (max-width: 1024px) {
+         .g-recaptcha {
+            transform: scale(0.57);
+            transform-origin: left;
+         }
+      }
+
+      .login_footer span {
+         color: #B6B6B6;
+         font-size: 13px
+      }
+
+      .login_footer span a {
+         color: #495774
+      }
+
+      .input-group.input_border input {
+         border-right: 0;
+      }
+
+      .input_border span.input-group-text {
+         background-color: transparent;
+      }
+
+      select#country {
+         font-size: 12px
+      }
+
+      select#user-type {
+         font-size: 12px
+      }
+
+      label.error {
+         position: absolute;
+         bottom: -25px;
+      }
+
+      .input_border input span {
+         color: #FFDB0303
+      }
+
+      .asterisk_input:after {
+         content: " *";
+         color: #e32;
+         position: absolute;
+         margin: 0px 0px 0px -20px;
+         font-size: 17px;
+         padding: 0 5px 0 0;
+         font-weight: 700;
+      }
+
+      .register_down {
+         padding: 17px 30px
+      }
+
+      .login_title,
+      .login_footer {
+         padding: 15px 15px
+      }
+
+      .login_title p {
+         color: #B2B2B2
+      }
+
+      .login_title h3 {
+         font-size: 22px;
+         color: #495774
+      }
+
+      @media (min-width: 1024px) {
+         .login_page_left {
+            padding: 30px 60px;
+         }
+      } 
+    </style> -->
+</head>
+
+<!-- <body onload="getCountries();"> -->
+ 
+   <section class="login_page">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12 no-padding">
+               <div class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-6 offset-md-2 col-md-8 col-12 no-padding">
+                  <div class="row login_page_left register_down">
+                     <div class="login_logo col-xl-12 col-lg-12 col-md-12 col-12">
+                        <a href="#">
+                           <img src="../../../assets/images/belbooks-logo.svg" style="width: 120px">
+                        </a>
+                     </div>
+                     <div class="login_title">
+                        <h3>Welcome to BelBooks</h3>
+                        <p>Please fill out this form, and we'll send you a welcome<br>email to verify your email
+                           address</p>
+                     </div>
+                     <div class="login_form col-xl-12 col-lg-12 col-md-12 col-12 p-0">
+                        <form method="post" action="" id="register_form">
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group input_border">
+                                 <!-- <input type="text" class="form-control" name="companyname" id="companyname"
+                                    placeholder="Company Name" onblur="validateCompany()"><span class="asterisk_input"></span> -->
+                                    <input type="text" class="form-control" name="companyname" id="companyname"
+                                    placeholder="Company Name" ><span class="asterisk_input"></span>
+                                 <div class="input-group-append">
+                                    <span class="input-group-text"><img src="../../../assets/images/building.svg"></span>
+                                 </div>
+                                 
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p1"></p>
+                           </div>
+
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group input_border ">
+                                 <!-- <input type="username" class="form-control" name="User name" onblur="signupvalidatename()" id="username" placeholder="username"> -->
+                                 <input type="username" class="form-control" name="User name"  id="username" placeholder="username">
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p2"></p>
+                           </div>
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group input_border ">
+                                 <!-- <input type="email" class="form-control" name="Admin Email" onblur="signupvalidateEmail()" id="email" placeholder="Admin Email"> -->
+                                 <input type="email" class="form-control" name="Admin Email" id="email" placeholder="Admin Email">
+                                 <div class="input-group-append">
+                                    <span class="input-group-text"><img src="../../../assets/images/email.svg"></span>
+                                 </div>
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p3"></p>
+
+                           </div>
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group">
+                                 <!-- <select id="country_list" name="select" onclick="countryValidator()" onblur="signupcountry()" class="select form-control"> -->
+                                    <select id="country_list" name="select"  class="select form-control">
+                                    <option value="">Country Code</option>
+                                 </select>
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p4"></p>
+
+                           </div>
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group input_border ">
+                                 <!-- <input type="password" class="form-control" name="Password" onblur="signupvalidatePassword()" id="Password" placeholder="Set Password"> -->
+                                 <input type="password" class="form-control" name="Password"  id="Password" placeholder="Set Password">
+                                 <div class="input-group-append">
+                                    <span class="input-group-text"><img src="../../../assets/images/password.svg"></span>
+                                 </div>
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p5"></p>
+
+                           </div>
+                           <div class="form-group col-xl-6 col-lg-6 col-md-12 col-12">
+                              <div class="input-group input_border ">
+                                 <!-- <input type="password" class="form-control" name="confirm password" onblur="validateCpassword()" id="confirmpassword"
+                                    placeholder="confirm password"> -->
+                                    <input type="password" class="form-control" name="confirm password"  id="confirmpassword"
+                                    placeholder="confirm password">
+                                    <div class="input-group-append">
+                                    <span class="input-group-text"><img src="../../../assets/images/password.svg"></span>
+                                 </div>
+                              </div>
+                              <p style="padding-bottom:0px;padding-top: 0px; text-align:left; color:red" id="p6"></p>
+                           </div>
+                           <div class="form-group col-xl-12 col-lg-12 col-md-12 col-12">
+                              <div class="g-recaptcha" data-sitekey="6LdxJ4YUAAAAAHb5gURatC4Mn9oy6eRzXWMUuCtF"></div>
+                              <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                              <div class="form-text with-errors"></div>
+                           </div>
+                           <!-- <div class="form-group col-xl-12 col-lg-12 col-md-12 col-12">
+                                 <button id="register" type="submit" class="btn btn-primary login-button reg-btn ">Register</button>
+                              </div>
+                               -->
+                        </form>
+                        <div class="form-group col-xl-12 col-lg-12 col-md-12 col-12">
+                           <button id="register" type="submit" class="btn btn-primary login-button reg-btn ">Register</button>
+                        </div>
+                     </div>
+                     <div class="login_footer"> <span>Already registered? <a href="../Login/login.html"><b>Login Here</b></a></span>
+                     </div>
+                     <span id="message"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <script type="text/javascript" src="../../../assets/js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript" src="../../../assets/js/bootstrap.min.js"></script>
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script type="text/javascript" src="../../../assets/js/jquery.validate.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('#register_form').validate();
+      });
+   </script>
+
+
+
